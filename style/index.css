@@ -6,11 +6,30 @@ body{
     margin: 0 auto;
 }
 
+.container{
+    height: 500px;
+}
+
 h1{
     text-align: center;
     margin: 20px;
     font-size: 30px;
 }
+
+.includeName{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+
+input{
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    width: 50%;
+    
+}
+
 .sendName{
     border:solid 2px var(--kyndryl-orange);
     margin-top: 10px;
@@ -21,4 +40,6 @@ h1{
 .sendName:hover{
     background-color: lightslategray;
     color: white;
+    font-weight: bold;
+    
 }

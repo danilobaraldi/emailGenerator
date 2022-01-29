@@ -1,1 +1,5 @@
-let listEmployees = ["Adam Benson", "Clare Donaldson", "Ben Adams", "Donald Clarkson"]; 
+let listNames = ["Adam Benson", "Clare Donaldson", "Ben Adams", "Donald Clarkson"]; 
+
+function addName(){
+    addEventListener
+}
