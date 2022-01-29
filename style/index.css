@@ -1,0 +1,24 @@
+body{
+    --kyndryl-orange:#ff462d;
+    font-family: TWK Everett,Helvetica,Arial,sans-serif;
+    background: url();
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+.sendName{
+    border:solid 2px var(--kyndryl-orange);
+    margin-top: 10px;
+    padding: 10px;
+    display:content;
+    width: min-content;
+}
+.sendName:hover{
+    background-color: lightslategray;
+    color: white;
+}
