@@ -25,9 +25,9 @@ h1{
 
 input{
     padding: 5px;
-    margin: 5px 0 5px 0;
+    margin: 10px 0 10px 0;
     width: 50%;
-    
+    border: solid #D3D3D3 .5px;
 }
 
 .sendName{
@@ -36,6 +36,8 @@ input{
     padding: 10px;
     display:content;
     width: min-content;
+    align-items: flex-end;
+
 }
 .sendName:hover{
     background-color: lightslategray;
