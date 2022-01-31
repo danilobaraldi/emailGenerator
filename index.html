@@ -15,19 +15,24 @@
             <h1>Cadastro de e-mails</h1>
         </div>
         <div class="includeName">
-            <label for="addEmploye">novo funcionário</label>
-            <input type="name" name="addEmploye" id="addEmploye" placeholder="Nome Completo" required >
-            <input type="button" class="button sendName" value="registrar" onclick="addName()"></input>
+            <label for="addEmployee">novo funcionário</label>
+            <input type="text" name="addEmployee" id="addEmployee" placeholder="Nome Completo" required ></input>
+            <input type="submit" class="sendName" value="Registrar" onclick="addName()"></input>
         </div>
     </div>
-    <table class="listUsers" id="listUsers">
-        <th>
-            <td>Nome</td>
-        </th>
-    </table>
-
+    <div class="conatiner-table">
+        <table class="table-list">
+            <tr>
+              <th>Nome</th>
+              <th>e-mails</th>
+            </tr>
+            <tr>
+                <td>Elisabe Freitas-Dantas</td>
+                <td>freitasdantas.e@company.com</td>
+            </tr>
+          </table>
+    </div>
 
     <script src="script/script.js"></script>
-    <script src="script/interface.js"></script>
 </body>
 </html>

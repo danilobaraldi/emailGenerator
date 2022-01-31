@@ -26,7 +26,7 @@ h1{
 input{
     padding: 5px;
     margin: 10px 0 10px 0;
-    width: 50%;
+    width: 18vmax ;
     border: solid #D3D3D3 .5px;
 }
 
@@ -44,4 +44,9 @@ input{
     color: white;
     font-weight: bold;
     
+}
+
+.table-list{
+    width: 100%;
+    text-align: left;
 }

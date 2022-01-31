@@ -1,21 +1,51 @@
-let listNames = ['Elisabe Freitas Dantas','Peter Parker', 'Adam Benson', 'Clare Donaldson', 'Ben Adams', 'Donald Clarkson', 'Amanda Mendes Costa', 'Daniel de Souza Santos', 'Alise de Souza Araujo-Oliveira', 'Marcos Antonio Paiva Filho']; 
+const input = document.getElementById("addEmployee");
+const table = document.getElementsByClassName("table-list")
 
-function addName(){
-    let input = document.getElementById("addEmploye");
-    listNames.push(input.value);
-    console.log(input.value);
-    
-}
 
-function showList(){
+const listNames = [
+    'Elisabete Freitas-Dantas',
+    'Peter Parker',
+    'Adam Benson',
+    'Clare Donaldson',
+    'Ben Adams',
+    'Donald Clarkson',
+    'Amanda Mendes Costa',
+    'Daniel de Souza Santos',
+    'Alise de Souza Araujo-Oliveira',
+    'Marcos Antonio Paiva Filho'
+];
 
-    let tableList = document.getElementById("listUsers")
-    for(let i = 0; i <listNames.length; i++){
+function addName() {
+    let validName = listNames.includes(input.value);
 
-        let showUser = listNames[i];
-        
-
+    if (input.value == '' || input.value == ' ') {
+        return alert("Insira o nome do funcionário!")
     }
-        
-    ;
+    if (validName == false) {
+        input.value
+        return listNames.push(input.value);
+    } else {
+        return alert("Funcionário já cadastrado!!!")
+    }
 }
+
+let nameNoHifen = []
+
+const removeHifen = (nome) => {
+    nameNoHifen = nome.split('-').join('').toLowerCase();
+    nameNoHifen = nameNoHifen.split(' ')
+    console.log(nameNoHifen)
+    return nameNoHifen;
+}
+
+listNames.forEach((name, idex, array) => {
+    removeHifen(name);
+})
+
+console.log(nameNoHifen[nameNoHifen.length -1] +'.'+ nameNoHifen[0][1]+'@company.com')
+
+nameNoHifen.forEach((index) => {
+
+    let msg = `${nameNoHifen[nameNoHifen.length -1]}.${nameNoHifen[0][1]}@company.com`;
+    console.log(msg)
+})
