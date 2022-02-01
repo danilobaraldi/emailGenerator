@@ -1,13 +1,10 @@
 const input = document.getElementById("addEmployee");
-const table = document.getElementsByClassName("table-list")
-
-
-const listNames = [
+let listNames = [
     'Elisabete Freitas-Dantas',
     'Peter Parker',
     'Adam Benson',
-    'Clare Donaldson',
-    'Ben Adams',
+    'Davis Clarkson',
+    'Pedro Parker',
     'Donald Clarkson',
     'Amanda Mendes Costa',
     'Daniel de Souza Santos',
@@ -16,36 +13,40 @@ const listNames = [
 ];
 
 function addName() {
-    let validName = listNames.includes(input.value);
-
-    if (input.value == '' || input.value == ' ') {
-        return alert("Insira o nome do funcionário!")
+    
+    if (input.value == '' || input.value == ' ' || input.value.length < 8) {
+        return alert("Insira o nome COMPLETO do funcionário!")   
     }
+
+    let validName = listNames.includes(input.value);
     if (validName == false) {
-        input.value
+        
+        setTimeout(() => {
+            input.value
+        }, 10);
         return listNames.push(input.value);
     } else {
         return alert("Funcionário já cadastrado!!!")
     }
 }
 
-let nameNoHifen = []
 
-const removeHifen = (nome) => {
-    nameNoHifen = nome.split('-').join('').toLowerCase();
-    nameNoHifen = nameNoHifen.split(' ')
-    console.log(nameNoHifen)
-    return nameNoHifen;
-}
-
-listNames.forEach((name, idex, array) => {
-    removeHifen(name);
+const removeHifen = listNames.map((name) => {
+    return name.split('-').join('').toLocaleLowerCase();
 })
 
-console.log(nameNoHifen[nameNoHifen.length -1] +'.'+ nameNoHifen[0][1]+'@company.com')
-
-nameNoHifen.forEach((index) => {
-
-    let msg = `${nameNoHifen[nameNoHifen.length -1]}.${nameNoHifen[0][1]}@company.com`;
-    console.log(msg)
+const returnSubList = removeHifen.map((value)=>{
+    return value.split(' ')
 })
+console.log(returnSubList)
+
+const returnMail = returnSubList.map((value,index)=>{
+    return `${value[value.length -1]}.${value[0][0]}@company.com`;
+    
+})
+console.log(returnMail)
+
+//TODO: Adicionar algum tipo de setTimeOut - para fazer o reload do código após a inclusão do nove nome. 
+//TODO: Criar uma regra para validação do nome com base na quantidade dos arrays para gerar o e-mail. 
+//TODO: Exportar os e-mails para uma lista permanente 
+//TODO: Manipular os e-mails e adicionar um contador caso já exista.
