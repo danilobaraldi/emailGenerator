@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company.com</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Company.com</title>
 
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/index.css">
-</head>
-<body>
-    <div class="container">
-        <div class="title">
-            <h1>Cadastro de e-mails</h1>
-        </div>
-        <div class="includeName">
-            <label for="addEmployee">novo funcionário</label>
-            <input type="text" name="addEmployee" id="addEmployee" placeholder="Nome Completo" required ></input>
-            <input type="submit" class="sendName" value="Registrar" onclick="addName()"></input>
-        </div>
-        <figure>
-            <img src="https://previews.123rf.com/images/bearsky23/bearsky231806/bearsky23180600136/103834970-nuevo-icono-del-proceso-de-contrataci%C3%B3n-de-empleados-con-manual-lista-de-verificaci%C3%B3n-etc-.jpg" alt="Kyndryl logo">
-        </figure>
-        <div class="conatiner-table">
-            <table class="table-list">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>Cadastro de e-mails</h1>
+            </div>
+            <div class="includeName">
+                <label for="addEmployee">novo funcionário</label>
+                <input type="text" name="addEmployee" id="addEmployee" placeholder="Nome Completo" required ></input>
+                <input type="submit" class="sendName" value="Registrar" onclick="addName()"></input>
+            </div>
+            <figure>
+                <img src="https://previews.123rf.com/images/bearsky23/bearsky231806/bearsky23180600136/103834970-nuevo-icono-del-proceso-de-contrataci%C3%B3n-de-empleados-con-manual-lista-de-verificaci%C3%B3n-etc-.jpg" alt="Kyndryl logo">
+            </figure>
+            <div class="conatiner-table">
                 <h2>E-mails cadastrados:</h2>
-                <tr>
-                    <td>Elisabe Freitas-Dantas</td>
-                    <td>freitasdantas.e@company.com</td>
-                </tr>
-              </table>
+                <table class="table-list" ><tbody id="list-of-emails"></tbody></table>
+            </div>
         </div>
-    </div>
-    <script src="script/script.js"></script>
-</body>
+        <script src="script/script.js"></script>
+    </body>
 </html>

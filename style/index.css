@@ -1,70 +1,73 @@
-:root{
+:root {
     background-color: #e6e6e6;
 }
 
-body{
-    font-family: TWK Everett,Helvetica,Arial,sans-serif;
+body {
+    font-family: TWK Everett, Helvetica, Arial, sans-serif;
     background: url();
     width: 60vw;
     margin: 0 auto;
     text-align: center7;
-    
 }
-.container{
+
+.container {
     height: 500px;
 }
 
-h1{
+h1 {
     text-align: center;
     margin: 40px auto 60px;
     font-size: 30px;
 }
 
-.includeName{
+.includeName {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-transform: capitalize;
 }
 
-input{
+input {
     padding: 5px;
     margin: 10px 0 10px 0;
-    width: 18vmax ;
-    
+    width: 18vmax;
 }
 
-.sendName{
-    border:solid 2px var(--kyndryl-orange);
+.sendName {
+    border: solid 2px var(--kyndryl-orange);
     margin-top: 10px;
     padding: 10px;
-    display:content;
+    display: content;
     width: min-content;
     align-items: flex-end;
     line-height: 20px;
     border: solid 1px;
     border-radius: 5px;
 }
-.sendName:hover{
+
+.sendName:hover {
     background-color: lightslategray;
     color: white;
     font-weight: bold;
     border: solid #ff462d 1px;
 }
-figure{
+
+figure {
     width: 100%;
-    text-align: center; 
+    text-align: center;
 }
-img{
+
+img {
     width: 100%;
     margin: 0px auto;
 }
 
-h2{
+h2 {
     line-height: 30px;
     font-weight: 700;
 }
-.table-list{
+
+.table-list {
     width: 100%;
     text-align: left;
     margin-top: 20px;
