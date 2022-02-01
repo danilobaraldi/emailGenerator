@@ -1,9 +1,8 @@
-/* :root{
-    background-color: #ff462d;
-    color: white;
-} */
+:root{
+    background-color: #e6e6e6;
+}
+
 body{
-    --kyndryl-orange:#ff462d;
     font-family: TWK Everett,Helvetica,Arial,sans-serif;
     background: url();
     width: 60vw;
@@ -32,7 +31,7 @@ input{
     padding: 5px;
     margin: 10px 0 10px 0;
     width: 18vmax ;
-    border: solid #D3D3D3 .5px;
+    
 }
 
 .sendName{
@@ -42,13 +41,15 @@ input{
     display:content;
     width: min-content;
     align-items: flex-end;
-
+    line-height: 20px;
+    border: solid 1px;
+    border-radius: 5px;
 }
 .sendName:hover{
     background-color: lightslategray;
     color: white;
     font-weight: bold;
-    
+    border: solid #ff462d 1px;
 }
 figure{
     width: 100%;
