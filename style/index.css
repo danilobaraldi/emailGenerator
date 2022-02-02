@@ -8,15 +8,16 @@ body {
     width: 60vw;
     margin: 0 auto;
     text-align: center7;
+    height: 100vh;
 }
 
 .container {
-    height: 500px;
+    margin-bottom: 50px;
 }
 
 h1 {
     text-align: center;
-    margin: 40px auto 60px;
+    margin: 20px auto 30px;
     font-size: 30px;
 }
 
