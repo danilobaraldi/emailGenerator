@@ -32,7 +32,9 @@ input {
     margin: 10px 0 10px 0;
     width: 18vmax;
 }
-
+.addEmployee{
+    text-transform: capitalize;
+}
 .sendName {
     border: solid 2px var(--kyndryl-orange);
     margin-top: 10px;
@@ -50,6 +52,7 @@ input {
     color: white;
     font-weight: bold;
     border: solid #ff462d 1px;
+    cursor:pointer;
 }
 
 figure {
@@ -71,4 +74,35 @@ h2 {
     width: 100%;
     text-align: left;
     margin-top: 20px;
+}
+tr{
+    line-height: 25px;
+    border: 1px gray solid;
+    padding-left: 10px;
+}
+tr:hover{
+    background-color: gray;
+    font-weight: bolder;
+
+}
+td{
+    padding-left: 10px;
+}
+
+@media screen and (max-width:570px) {
+    img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:850px) {
+    :root{
+        text-align: center;
+    }
+    .includeName{
+        align-items: center;
+    }
+    td{
+        display: flex;
+    }
 }

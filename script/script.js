@@ -33,19 +33,27 @@ const loadTable = () => {
     <td>${getEmail(name)}</td>
    </tr>`).join("");
 };
-
+let validEmail =[];
 const getEmail = (name) => {
     let splitName = name.split("-").join("").split(" ");
+    let msg ="";
   
     let newName = splitName[splitName.length - 1];
     for (let index = 0; index < splitName.length - 1; index++) {
-      newName += `.${splitName[index][0][0]}`;
-    }
-  
-    return `${newName}@company.com`.toLocaleLowerCase();
+      newName += `.${splitName[index][0][0]}`; 
+      
+      if(validEmail.includes(newName)){
+          validEmail = newName;
+      }else{
+          validEmail = newName+1;
+      }
+    } 
+    
+    
+    msg = `${newName}@company.com`.toLocaleLowerCase()
+    console.log(validEmail)
+    //console.log (msg)
+    return msg;
   };
 
- 
 loadTable();
-
-//TODO: Manipular os e-mails e adicionar um contador caso já exista.
