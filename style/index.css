@@ -66,6 +66,7 @@ img {
 }
 
 h2 {
+    margin-top: 15px;
     line-height: 30px;
     font-weight: 700;
 }
@@ -73,7 +74,7 @@ h2 {
 .table-list {
     width: 100%;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 tr{
     line-height: 25px;
